@@ -1,0 +1,47 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  padding: 2rem 3rem;
+}
+
+.Main__forecast {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.Main__no-location {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.Main__no-location-paragraph {
+  text-align: center;
+}
+
+.Main--warning {
+  animation-name: show-warning;
+  animation-duration: 5s;
+}
+
+@keyframes show-warning {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .Main {
+    padding: 2rem;
+  }
+}
